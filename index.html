@@ -69,10 +69,10 @@
     </section>
 
     <section class="search-container-ongs">
-        <form class="search-bar" action="#" method="get">
-            <input type="text" placeholder="Pesquisar...">
-            <button type="submit"><img src="img/lupa.png" alt="Buscar" class="lupa-icon"></button>
-        </form>
+        <div class="search-bar">
+            <input type="text" id="campoBuscaHome" placeholder="Pesquisar eventos, ONGs ou categorias...">
+            <button type="button" id="btnBuscaHome"><img src="img/lupa.png" alt="Buscar" class="lupa-icon"></button>
+        </div>
     </section>
 
     <section class="SegundoFundo">
@@ -161,5 +161,17 @@
         <div class="footer-bottom"><p>&copy; 2025 Voluncheer. Todos os direitos reservados.</p></div>
     </footer>
     <script src="home.js"></script>
+    <script src="auth.js"></script>
+    <script>
+      function buscarHome() {
+        const q = document.getElementById('campoBuscaHome').value.trim()
+        if (!q) { window.location.href = 'pagongs/ongs.html'; return }
+        window.location.href = 'pagongs/ongs.html?busca=' + encodeURIComponent(q)
+      }
+      document.getElementById('btnBuscaHome').addEventListener('click', buscarHome)
+      document.getElementById('campoBuscaHome').addEventListener('keydown', e => {
+        if (e.key === 'Enter') buscarHome()
+      })
+    </script>
 </body>
 </html>
