@@ -133,3 +133,32 @@ label {
     max-width: 90%;
   }
 }
+/* ── Adições para mensagens inline e melhorias ── */
+.msg-inline {
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  margin-top: 10px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-logout {
+  background: #c0392b !important;
+}
+.btn-logout:hover {
+  background: #a93226 !important;
+}
+
+.link {
+  cursor: pointer;
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #4A6EDB;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74,110,219,0.12);
+}
