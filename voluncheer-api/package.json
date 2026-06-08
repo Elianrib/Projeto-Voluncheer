@@ -1,18 +1,19 @@
 {
-  "name": "src",
+  "name": "voluncheer-final-1",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
-  "main": "server.js",
+  "main": "Projeto-Voluncheer/voluncheer-api/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node Projeto-Voluncheer/voluncheer-api/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
     "cors": "^2.8.6",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "path": "^0.12.7"
   }
 }
